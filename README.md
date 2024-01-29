@@ -22,8 +22,8 @@
     ``` phthon
     # 이 부분은 주석입니다
     var01 = 10 # 정수, 실수, 불, 문자열 모두 가능
-    print(var01)
-    print(type(var01))
+    print(var01) # 10
+    print(type(var01)) # int type 
     
     print(5 + 4 / 2) # 7.0
     print(5 == 4) # False
