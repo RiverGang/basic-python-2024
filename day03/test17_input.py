@@ -19,6 +19,7 @@ else:
     print('잘못 된 입력 값, 정수만 입력하세요')
 
 # 곱하기 응용
+    
 temp_val = input('곱할 수 입력 > ') 
 while temp_val.isnumeric() == False: # 입력값이 정수가 아니면, 입력값 기입 반복
     print('잘못 된 입력 값, 정수만 입력하세요')
