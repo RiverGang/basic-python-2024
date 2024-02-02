@@ -14,7 +14,7 @@ print(f'응답코드 : {res.status}') # url로 요청된 웹사이트 응답 확
 # 응답코드 200대 => able, 404 or 500대 => error
 
 print(res.read())
-rint(res.read())
+print(res.read())
 
 # urllib.request보다 성능이 조금 더 나은 모듈
 import requests
