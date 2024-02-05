@@ -132,5 +132,30 @@
 
     ![쓰레드예제](https://raw.githubusercontent.com/RiverGang/basic-python-2024/main/images/python_003.gif)
 
+    ```python
+
+    # 쓰레드 클래스에서 시그널 선언
+    class BackWorker(QThread): # PyQt에서 스레드 클래스 상속
+        initSignal = pyqtSignal(int) # 시그널을 UT 쓰레드로 젼달하기 위한 변수개체
+        setSignal = pyqtSignal(int)
+
+        # ...
+
+        def run(self) -> None: # Thread 실행
+        # thread로 동작할 내용
+        maxVal = 1000001
+        self.initSignal.emit(maxVal) # emit => UI 쓰레드로 보내기
+        
+        # ...
+
+    class qtwin_exam(QWidget): # UI 쓰레드
+        def btnStartCliceked(self):
+        th = BackWorker(self)
+        th.start() # BackWorker 내의 self.run() 실행
+        th.initSignal.connect(self.initPgbTask) # 쓰레드에서 초기화 시그널이 오면 initPgbTask 슬롯함수가 대신 처리
+
+        # ...
+
+    ```
 
 - 가상환경
