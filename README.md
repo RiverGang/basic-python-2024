@@ -156,6 +156,12 @@
 
         # ...
 
+        # 스레드에서 시그널이 넘어오면 UI를 대신 처리해주는 부분
+    @pyqtSlot(int) # BackWorker 스레드에서 self.initSingnal.emit() 동작해서 실행
+    def initPgbTask(self, maxVal):
+        self.pgbTask.setValue(0)
+        self.pgbTask.setRange(0, maxVal-1)
+
     ```
 
 - 가상환경
