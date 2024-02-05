@@ -125,6 +125,12 @@
     > pip install PyQt5Designer
     ```
 
-    - PyQt5 기본 실행 
+    - PyQt5 기본 실행
+    - QtDesigner 사용법
+    - ★★★ 쓰레드 학습 : UI쓰레드와 Background쓰레드 분리
+        - GIL, 병렬프로세싱 더 학습할 것
+            
+    ![쓰레드예제](https://raw.githubusercontent.com/RiverGang/basic-python-2024/main/images/python_003.png)
+
 
 - 가상환경
