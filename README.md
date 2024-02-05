@@ -105,9 +105,26 @@
     - 주피터 노트북 활용 - 구글 코랩(Colab)
     - folium 계속
     - json 사용법
+    - 응용예제 연습
+        - ip 주소 확인
+
 
     - 가상환경
     - 객체지향(나중에...)
         - 오버로딩, 오버라이딩(재정의)
         - 상속, 다중상속
         - 추상클래스
+
+## 6일차
+- Python 라이브러리 경로 : C:\DEV\Langs\Python311\Lib\site-packages
+- 파이썬 응용
+    - Window App(PyQt) 만들기
+
+    ```shell
+    > pip install PyQt5
+    > pip install PyQt5Designer
+    ```
+
+    - PyQt5 기본 실행 
+
+- 가상환경
