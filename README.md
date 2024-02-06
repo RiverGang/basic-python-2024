@@ -183,4 +183,16 @@
         ```
 
     - 가상환경 Virtualenv
+        - 다른 버전 파이썬도 설치해야 사용 가능
+        - 현재 3.11에서 3.9 가상환경 만드려면 3.9 설치 필요
     - PyQt5와 응용예제 연습
+        - 이미지 뷰어
+        - 이미지 에디터
+
+    ![PyQt예제](https://raw.githubusercontent.com/RiverGang/basic-python-2024/main/images/python_004.png)
+    
+## 8일차
+- 파이썬 응용
+    - PyQt5 응용예제 계속
+
+- 파이썬 기본 코딩테스트
