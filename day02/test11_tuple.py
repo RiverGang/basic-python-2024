@@ -9,6 +9,7 @@ tuple_a = (1,3,5,7,9)
 
 print(tuple_a[1])
 
+
 # tuple_a[1] = 4 => 튜플은 값 변경 불가.
 
 
