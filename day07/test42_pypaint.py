@@ -15,8 +15,10 @@ class WinApp(QWidget):
         self.initSignal()
 
     def initUI(self):
-        uic.loadUi('./day07/pyPaint.ui', self)
-        self.setWindowIcon(QIcon('./images/iot.png'))
+        # uic.loadUi('./day07/pyPaint.ui', self)
+        uic.loadUi('C:/Sources/basic-python-2024/day07/pyFaint.ui', self) # 실행파일 생성 시 경로에 상대경로 없어져야 함
+        # self.setWindowIcon(QIcon('./images/iot.png'))
+        self.setWindowIcon(QIcon('C:/Sources/basic-python-2024/day07/iot.png'))
         self.setWindowTitle('Py 그림판')
 
         # 캔버스 초기화
